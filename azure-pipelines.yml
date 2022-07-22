@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  name: UNYLEYA
+  name: 'UNYLEYA'
   vmImage: 'UNYLEYA'
 
 # Command line
