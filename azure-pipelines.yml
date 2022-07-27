@@ -78,3 +78,7 @@ steps:
     repository: 'unyleya_projeto_cicd_elvis'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
+    
+- task: CmdLine@2
+  inputs:
+    script: 'rmdir C:\a'
