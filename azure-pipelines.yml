@@ -79,6 +79,6 @@ steps:
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
     
-- task: CmdLine@2
+- task: CmdLine@3
   inputs:
     script: 'rmdir C:\a'
