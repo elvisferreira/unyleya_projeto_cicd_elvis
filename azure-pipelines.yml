@@ -71,9 +71,3 @@ steps:
   inputs:
        artifactName: # 'drop'
 
-- task: Docker@2
-  inputs:
-    containerRegistry: 'Docker Hub'
-    repository: 'unyleya_projeto_cicd_elvis'
-    command: 'buildAndPush'
-    Dockerfile: '**/Dockerfile'
