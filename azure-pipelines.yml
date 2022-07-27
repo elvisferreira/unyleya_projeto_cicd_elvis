@@ -72,8 +72,6 @@ steps:
   inputs:
        artifactName: # 'drop'
 
-
-
 - task: Docker@2
   inputs:
     containerRegistry: 'Docker Hub'
