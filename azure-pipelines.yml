@@ -71,3 +71,12 @@ steps:
   inputs:
        artifactName: # 'drop'
 
+- task: CopyFiles@2
+  inputs:
+    contents: '**/*.*'
+    targetFolder: $(build.artifactStagingDirectory)
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    artifactName: 'MobEAD'
+    pathToPublish: 'd:\a\1\a'
