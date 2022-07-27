@@ -67,16 +67,6 @@ steps:
 #  inputs:
 #    pollingTimeoutSec: '300'
 
-#- task: PublishPipelineArtifact@1
-#  inputs:
-#       artifactName: # 'drop'
-
-- task: CopyFiles@2
+- task: PublishPipelineArtifact@1
   inputs:
-    contents: '**/*.*'
-    targetFolder: $(build.artifactStagingDirectory)
-
-- task: PublishBuildArtifacts@1
-  inputs:
-    artifactName: 'MobEAD'
-    pathToPublish: 'd:\a\1\a'
+       artifactName: # 'drop'
